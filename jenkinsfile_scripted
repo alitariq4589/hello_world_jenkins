@@ -10,7 +10,7 @@ node{
     stage (' *** Running Binaries ***'){
         sh '''#!/bin/bash
             ./helloworld.out
-            spike $(which pk) helloworld_riscv_compiled.out
+            qemu-riscv64 helloworld_riscv_compiled.out
          ''' 
     }
 }
