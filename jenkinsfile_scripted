@@ -10,7 +10,7 @@ node{
     stage (' *** Running Binaries ***'){
         sh '''#!/bin/bash
             ./helloworld.out
-            qemu-riscv64 helloworld_riscv_compiled.out
+            qemu-riscv64 -L $RISCV_SYSROOT helloworld_riscv_compiled.out
          ''' 
     }
 }
