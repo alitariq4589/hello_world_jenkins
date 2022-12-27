@@ -1,5 +1,5 @@
 pipeline {
-    agent {label "workstation_node"}
+    agent {label "x86_runner2"}
 
     stages {
         stage('Clone Repository') {
