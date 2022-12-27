@@ -23,7 +23,7 @@ pipeline {
                         ./helloworld.out
                     '''
                     sh'''#!/bin/bash
-                        spike $(which pk) helloworld_riscv_compiled.out
+                        qemu-riscv64 -L $RISCV_SYSROOT helloworld_riscv_compiled.out
                     '''
             }
         }
