@@ -2,3 +2,4 @@
 int main (){ 
 	printf("Hello World inside!\n");  
 }
+int prfunc(){}
